@@ -3,9 +3,10 @@ import { Store } from '@ngrx/store';
 import { increment, decrement } from '../store/counter.actions';
 
 @Component({
-  selector: 'app-counter-controls',
-  templateUrl: './counter-controls.component.html',
-  styleUrl: './counter-controls.component.scss'
+    selector: 'app-counter-controls',
+    templateUrl: './counter-controls.component.html',
+    styleUrl: './counter-controls.component.scss',
+    standalone: false
 })
 export class CounterControlsComponent {
   constructor(private store: Store) {}

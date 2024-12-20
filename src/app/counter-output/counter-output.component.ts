@@ -4,9 +4,10 @@ import { Observable } from 'rxjs';
 import { selectCount, selectDoubleCount } from '../store/counter.selectors';
 
 @Component({
-  selector: 'app-counter-output',
-  templateUrl: './counter-output.component.html',
-  styleUrl: './counter-output.component.scss'
+    selector: 'app-counter-output',
+    templateUrl: './counter-output.component.html',
+    styleUrl: './counter-output.component.scss',
+    standalone: false
 })
 export class CounterOutputComponent {
   count$: Observable<number>;
